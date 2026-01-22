@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+  <meta charset="UTF-8">
+  <title>Ceramah Motivasi Kecemerlangan Akademik</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ===== BAHAGIAN 1: IKLAN CERAMAH ===== -->
+  <header class="hero">
+    <div class="container">
+      <h1>Ceramah Kecemerlangan Akademik:<br>“Strategi Belajar Cemerlang dalam 30 Hari”</h1>
+      <img src="foto_penceramah.jpg" alt="Foto Penceramah" class="foto">
+      <h2>Prof. Madya Dr. Nurul Huda</h2>
+      <p class="gelaran">PhD Pendidikan (UKM) | Pakar Psikologi Pendidikan | Penulis 15 Buku Bestseller</p>
+
+      <div class="logistik">
+        <p>📅 <strong>Tarikh:</strong> 15 Februari 2026</p>
+        <p>🕘 <strong>Masa:</strong> 8.00 pagi – 5.00 petang</p>
+        <p>📍 <strong>Lokasi:</strong> Dewan Kuliah Utama, Kampus Tunku, UTHM</p>
+        <p>💰 <strong>Yuran:</strong> RM 250.00 <small>(seorang)</small></p>
+      </div>
+
+      <div class="sinopsis">
+        <h3>Apa yang anda pelajari?</h3>
+        <ul>
+          <li>Teknik Speed-Reading & Mind-Mapping terkini</li>
+          <li>Formula menulis nota 10 muka surat dalam 10 minit</li>
+          <li>Rahsia tahan ingatan jangka panjang (Long-Term Memory)</li>
+          <li>Plan “30-Hari Score A” yang boleh digunakan serta-merta</li>
+        </ul>
+      </div>
+
+      <p class="hubungi">
+        📞 011-2345 6789 | ✉️ ceramah@uthm.edu.my
+      </p>
+    </div>
+  </header>
+
+  <!-- ===== BAHAGIAN 2: BORANG TEMPAHAN ===== -->
+  <section class="form-section">
+    <div class="container">
+      <h2>Daftar Sekarang – Tempat Terhad!</h2>
+
+      <form id="borangTempah">
+        <label>Nama Penuh *
+          <input type="text" name="nama" required>
+        </label>
+
+        <label>Alamat E-mel *
+          <input type="email" name="email" required>
+        </label>
+
+        <label>Nombor Telefon *
+          <input type="tel" name="telefon" pattern="[0-9+-]{10,13}" required>
+        </label>
+
+        <label>Kategori Peserta *
+          <select name="kategori" required>
+            <option value="">-- Sila Pilih --</option>
+            <option>Pelajar</option>
+            <option>Pensyarah</option>
+            <option>Orang Awam</option>
+            <option>Korporat</option>
+          </select>
+        </label>
+
+        <label>Bilangan Slot *
+          <input type="number" name="slot" min="1" max="10" required>
+        </label>
+
+        <label>Muat Naik Bukti Pembayaran (resit/gambar) *
+          <input type="file" name="resit" accept="image/*,.pdf" required>
+        </label>
+
+        <label class="full">
+          <input type="checkbox" name="perakuan" required>
+          Saya bersetuju dengan <a href="#" target="_blank">Terma & Syarat</a> pendaftaran.
+        </label>
+
+        <button type="submit">Hantar Pendaftaran</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- ===== BAHAGIAN 3: PENGESAHAN TANPA ALERT ===== -->
+  <section id="pengesahan" class="hidden">
+    <div class="container kad">
+      <h2>🎉 Pendaftaran Berjaya!</h2>
+      <div id="maklumatPeserta"></div>
+      <button onclick="window.location.reload()">Daftar Peserta Baru</button>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
